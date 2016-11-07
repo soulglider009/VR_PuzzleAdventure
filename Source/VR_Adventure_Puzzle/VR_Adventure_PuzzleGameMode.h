@@ -3,6 +3,8 @@
 #include "GameFramework/GameMode.h"
 #include "VR_Adventure_PuzzleGameMode.generated.h"
 
+//TODO setup a better architecture? Not sure if getting pawn then calling a public function is the best way. There's no way to know who called this function...
+
 UCLASS(minimalapi)
 class AVR_Adventure_PuzzleGameMode : public AGameMode
 {
@@ -10,6 +12,15 @@ class AVR_Adventure_PuzzleGameMode : public AGameMode
 
 public:
 	AVR_Adventure_PuzzleGameMode();
+
+	virtual void BeginPlay() override;
+
+
+private:
+
+	UFUNCTION()
+	void OnPercievedPlayer();
+
 };
 
 
