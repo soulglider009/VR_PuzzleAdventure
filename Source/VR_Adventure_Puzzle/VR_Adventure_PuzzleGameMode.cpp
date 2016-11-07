@@ -19,7 +19,7 @@ AVR_Adventure_PuzzleGameMode::AVR_Adventure_PuzzleGameMode()
 void AVR_Adventure_PuzzleGameMode::BeginPlay() {
 	Super::BeginPlay();
 
-	TSubclassOf<AGuardAIController> ClassToFind;
+	/*TSubclassOf<AGuardAIController> ClassToFind;
 	ClassToFind = AGuardAIController::StaticClass(); //Required to look up gameplay statics all actors
 	TArray<AActor*> GuardArray;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ClassToFind, GuardArray);
@@ -32,10 +32,10 @@ void AVR_Adventure_PuzzleGameMode::BeginPlay() {
 		if (!ensure(GuardLogic)) { return; }
 		GuardLogic->OnPlayerPercieved.AddUniqueDynamic(this, &AVR_Adventure_PuzzleGameMode::OnPercievedPlayer);
 		UE_LOG(LogTemp, Warning, TEXT("Guard named %s has been found and delegate registered"), *GuardArray[i]->GetName());
-	}
+	}*/
 }
 
-void AVR_Adventure_PuzzleGameMode::OnPercievedPlayer()
+/*void AVR_Adventure_PuzzleGameMode::OnPercievedPlayer()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Gamemode was notified of player percieved"));
-}
+}*/

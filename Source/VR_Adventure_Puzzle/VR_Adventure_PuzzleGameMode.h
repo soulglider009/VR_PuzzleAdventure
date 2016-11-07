@@ -18,8 +18,8 @@ public:
 
 private:
 
-	UFUNCTION()
-	void OnPercievedPlayer();
+	/*UFUNCTION(BlueprintCallable, Category = "See Player")
+	void OnPercievedPlayer();*/
 
 };
 
