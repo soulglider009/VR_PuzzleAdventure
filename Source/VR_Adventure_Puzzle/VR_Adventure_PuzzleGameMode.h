@@ -10,6 +10,7 @@ class AVR_Adventure_PuzzleGameMode : public AGameMode
 {
 	GENERATED_BODY()
 
+
 public:
 	AVR_Adventure_PuzzleGameMode();
 
@@ -18,8 +19,6 @@ public:
 
 private:
 
-	/*UFUNCTION(BlueprintCallable, Category = "See Player")
-	void OnPercievedPlayer();*/
 
 };
 

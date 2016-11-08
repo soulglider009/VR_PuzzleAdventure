@@ -26,9 +26,3 @@ void UKeyDoor::BeginPlay()
 }
 
 
-void UKeyDoor::OnStatueUpdate(AActor* UpdatedStatue)
-{
-	//Go through each key value pair
-	//Then need to add a delegate to open door
-}
-
