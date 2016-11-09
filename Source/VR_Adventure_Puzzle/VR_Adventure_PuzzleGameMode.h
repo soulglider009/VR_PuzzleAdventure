@@ -16,6 +16,8 @@ public:
 
 	virtual void BeginPlay() override;
 
+	UFUNCTION(BlueprintCallable, Category = "Custom")
+	virtual void SwapPlayerControllers(APlayerController* OldPC, APlayerController* NewPC) override;
 
 private:
 

@@ -38,3 +38,8 @@ void AVR_Adventure_PuzzleGameMode::BeginPlay() {
 		UE_LOG(LogTemp, Warning, TEXT("Guard named %s has been found and delegate registered"), *GuardArray[i]->GetName());
 	}*/
 }
+
+void AVR_Adventure_PuzzleGameMode::SwapPlayerControllers(APlayerController * OldPC, APlayerController * NewPC)
+{
+	Super::SwapPlayerControllers(OldPC, NewPC);
+}
