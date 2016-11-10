@@ -18,3 +18,6 @@ Content/AnimStarterPack
 Content/Mannequin/
 Source/VR_Adventure_Puzzle/TP_ThirdPerson/TP_ThirdPersonCharacter.cpp
 Source/VR_Adventure_Puzzle/TP_TopDown/TP_TopDownCharacter.cpp
+Content/TopDownCPP/
+Source/VR_Adventure_Puzzle/TP_ThirdPerson/
+Source/VR_Adventure_Puzzle/TP_TopDown/
