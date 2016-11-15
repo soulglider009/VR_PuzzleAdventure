@@ -11,7 +11,7 @@ AVR_Adventure_PuzzleGameMode::AVR_Adventure_PuzzleGameMode()
 {
 
 	// set default pawn class to our Blueprinted character
-	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/PatrolGuard/Behavior/PatrolGuard"));
+	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/Player/RTSPawn/Behavior/RTSCameraPawn_BP"));
 
 	if (PlayerPawnBPClass.Class != NULL)
 	{
