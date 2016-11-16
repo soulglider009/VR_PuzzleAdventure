@@ -25,7 +25,13 @@ public:
 	UPROPERTY(BlueprintAssignable, Category = "Guard Delegate")
 	FGuardDelegate OnPlayerPercieved;
 
+	UPROPERTY(BlueprintAssignable, Category = "Guard Delegate")
+	FGuardDelegate OnPlayerCollided;
+
 	UFUNCTION(BlueprintCallable, Category = "Perception")
 	void SeePlayer();
+
+	UFUNCTION(BlueprintCallable, Category = "Perception")
+	void CollideWithPlayer();
 	
 };

@@ -30,3 +30,8 @@ void APatrolGuard::SeePlayer()
 	OnPlayerPercieved.Broadcast();
 }
 
+void APatrolGuard::CollideWithPlayer()
+{
+	OnPlayerCollided.Broadcast();
+}
+
